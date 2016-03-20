@@ -1,0 +1,28 @@
+.main-slider {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.next,
+.prev {
+  position: absolute;
+  width: 45px;
+  height: 39px;
+  background: url(../images/sprite.png) no-repeat;
+  top: 50%;
+  margin-top: -22px;
+  cursor: pointer;
+  z-index: 100;
+}
+.next {
+  right: -50px;
+  background-position: 0 -355px;
+}
+.prev {
+  left: -50px;
+  background-position: 0 -314px;
+}

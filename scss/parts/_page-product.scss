@@ -1,0 +1,345 @@
+.single-product-wrap {
+  margin-top: 30px;
+}
+.colum-product {
+  width: 400px;
+  float: left;
+  position: relative;
+  margin-right: 30px;
+}
+.colum-description {
+  overflow: hidden;
+  h1 {
+    font-size: 16px;
+    color: #1c3963;
+    margin-bottom: 15px;
+    a {
+      color: inherit;
+      font-weight: normal;
+    }
+  }
+}
+.product-number {
+  display: block;
+  font-size: 14px;
+  color: #1c3963;
+  margin-bottom: 15px;
+}
+.product-info {
+  background: #edf1f4;
+  padding: 25px 0 25px 25px;
+}
+.product-price {
+  display: block;
+  color: #1c3963;
+  font-size: 30px;
+  font-weight: bold;
+}
+.data-select {
+  margin-top: 10px;
+  label {
+    @include inline-block(middle);
+    color: #1c3963;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  select {
+    @include inline-block(middle);
+    width: 125px;
+    padding: 4px 4px 4px 8px;
+    border: 1px solid #d4d4d4;
+    font-size: 13px;
+    color: #1c3963;
+    background: #FFF;
+    border-radius: 3px;
+  }
+  a {
+    @include inline-block(middle);
+  }
+}
+.link-pr {
+  color: #339;
+  font-size: 13px;
+  font-weight: bold;
+  &:hover {
+    color: #c00;
+  }
+}
+.avail-message {
+  color: #64a030;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 15px;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 10px;
+    left: 0;
+    top: 2px;
+    background: url(../images/sprite.png) no-repeat 0 -500px;
+  }
+}
+.add-liked {
+  font-size: 13px;
+  margin-top: 15px;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  color: #1c3963;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left: 0;
+    top: 2px;
+    background: url(../images/sprite.png) no-repeat 0 -511px;
+  }
+}
+.add-prod-bascet {
+  @include inline-block;
+  padding: 10px 40px 10px 70px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #454545;
+  transition: .5s;
+  position: relative;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.74);
+  margin-top: 15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcb00+0,ffc600+17,ffa200+80,ff9a00+100 */
+  background: #ffcb00; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffcb00 0%, #ffc600 17%, #ffa200 80%, #ff9a00 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffcb00 0%,#ffc600 17%,#ffa200 80%,#ff9a00 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffcb00 0%,#ffc600 17%,#ffa200 80%,#ff9a00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb00', endColorstr='#ff9a00',GradientType=0 ); /* IE6-9 */
+  &:hover {
+    opacity: .5;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: 25px;
+    width: 27px;
+    height: 27px;
+    background: url(../images/sprite.png) no-repeat 0 -571px;
+  }
+}
+.shiping {
+  margin-top: 15px;
+  font-size: 13px;
+  li {
+    color: #1c3963;
+  }
+}
+
+.left-slider {
+  width: 50px;
+  margin-right: 20px;
+  float: left;
+  img {
+    max-width: 100%;
+  }
+}
+.zoom-wrapper {
+  overflow: hidden;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+.new {
+  @include inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ffd800;
+  padding: 5px 10px;
+}
+
+#carousel {
+  width: 55px;
+  height: 200px;
+  overflow: hidden;
+}
+.carousel_box {
+  width: 50px;
+  height: 50px;
+  &:hover img {
+    border: 1px solid #ffdf30;
+  }
+  span {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    img {
+      border: 1px solid transparent;
+      @include box-sizing;
+    }
+  }
+}
+#carousel_next {
+  display: block;
+  width: 17px;
+  height: 16px;
+  background: url(../images/sprite.png) no-repeat 0 -466px;
+  margin: 10px auto 0;
+}
+#carousel_prev {
+  display: block;
+  width: 17px;
+  height: 16px;
+  background: url(../images/sprite.png) no-repeat 0 -483px;
+  margin: 0 auto 10px;
+}
+
+.tabs_control {
+  width: 100%;
+  border: 1px solid #96a1bd;
+  li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 5px 0;
+    border-right: 1px solid #96a1bd;
+    cursor: pointer;
+    color: #365075;
+    @include box-sizing;
+    &:last-child {
+      border-right: 0;
+    }
+    &.active {
+      background: #e4e7f0;
+      font-weight: bold;
+    }
+  }
+}
+.tabs_content {
+  display: none;
+  padding-top: 15px;
+  &.active {
+    display: block;
+  }
+  p {
+    font-size: 12px;
+    color: #1a4b80;
+    margin-bottom: 15px;
+  }
+  ul {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    li {
+      color: #1c3963;
+      font-size: 12px;
+      list-style-type: square;
+    }
+  }
+}
+.similar {
+  color: #1c3963;
+  font-size: 15px;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 7px;
+}
+.recomendation {
+  padding: 0 20px;
+  position: relative;
+}
+
+.next-owl,
+.prev-owl {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/sprite.png) no-repeat;
+  top: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.next-owl {
+  right: 0;
+  background-position: 0 -548px;
+}
+.prev-owl {
+  background-position: 0 -525px;
+  left: 0;
+}
+.recomendet-wrap {
+  padding: 5px;
+  @include box-sizing;
+  span {
+    display: block;
+    margin-top: 5px;
+  }
+  a {
+    display: block;
+    img {
+      max-width: 100%;
+    }
+  }
+  .link-recomend {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .img-wrap {
+    padding: 10px;
+  }
+  .brand {
+    color: #333;
+    font-weight: 100;
+    font-size: 11px;
+    font-style: italic;
+  }
+  .recomend-price {
+    color: #c00;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+footer {
+  background: $dark-blue;
+  padding: 7px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  span {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

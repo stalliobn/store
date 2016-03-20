@@ -1,0 +1,139 @@
+aside {
+  float: left;
+  width: 310px;
+  margin-bottom: 30px;
+}
+.logo {
+  width: 280px;
+  margin: auto;
+  background: $logo-bg;
+  text-align: center;
+  padding: 5px 0;
+}
+.hide-list {
+  display: none;
+  li {
+    padding-left: 0!important;
+    &:first-child {
+      border-top: 0!important;
+    }
+    &:last-child {
+      border-bottom: 0!important;
+    }
+  }
+}
+.catalog {
+  background: $orange;
+  padding: 20px 30px;
+  margin-top: 25px;
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+  ul {
+    li {
+      border-bottom: 1px solid #f6dc6b;
+      padding: 15px 0 15px 40px;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #fff;
+      font-weight: bold;
+      .trigger {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        top: 6px;
+        left: 0;
+        background: url(../images/sprite.png) no-repeat 0 -60px;
+      }
+      &:first-child {
+        border-top: 1px solid #f6dc6b;
+      }
+      a {
+        text-transform: inherit;
+        font-size: inherit;
+        color: inherit;
+        text-decoration: none;
+        font-weight: inherit;
+      }
+    }
+  }
+}
+
+.sub-brand {
+  background: $green;
+  text-align: center;
+  margin-top: 35px;
+  width: 280px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  span {
+    display: block;
+    color: #fff;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  input {
+    @include inline-block(middle);
+  }
+  input[type=submit] {
+    width: 34px;
+    height: 34px;
+  }
+  input[type=email],
+  input[type=text] {
+    width: 170px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+  }
+  .marginbottom {
+    margin-bottom: 25px;
+  }
+}
+.brand-btn {
+  background: url(../images/sprite.png) no-repeat 0 -396px;
+}
+.mail-btn {
+  background: url(../images/sprite.png) no-repeat 0 -431px;
+}
+.social {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  li {
+    @include inline-block(middle);
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}
+.od {
+  width: 55px;
+  height: 60px;
+  background: url(../images/sprite.png) no-repeat 0 -92px;
+}
+.vk {
+  width: 74px;
+  height: 74px;
+  background: url(../images/sprite.png) no-repeat 0 -160px;
+}
+.fb {
+  width: 60px;
+  height: 60px;
+  background: url(../images/sprite.png) no-repeat 0 -240px;
+}

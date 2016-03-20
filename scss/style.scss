@@ -1,0 +1,33 @@
+@import 'variables', 'mixins', 'normalize';
+@import 'parts/header', 'parts/aside', 'parts/main-slider', 'parts/product',
+'parts/page-product', 'parts/about', 'parts/contacts', 'parts/zoom', 'parts/owl';
+html {
+  &:before {
+    content: "#{inspect($breakpoints)}";
+    display: none;
+  }
+}
+.clearfix {
+  @each $pseudo in after before {
+    &:#{$pseudo} {
+      content: '';
+      display: table;
+    }
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+.wrapper {
+  width: 1150px;
+  margin: auto;
+}
+.page-wrapper {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font-family: Arial;
+}
+@include font-face(OpenSans, OpenSansRegular);
