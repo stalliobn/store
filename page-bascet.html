@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="top-line"></div>
+    <div class="wrapper clearfix">
+      <aside>
+        <div class="logo">
+          <a href="">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="accordeon">
+          <h3>Каталог</h3>
+          <div>
+            <span class="trigger">Обувь для мальчиков</span>
+            <div class="hide">
+              <ul>
+                <li><a href="">туфли</a></li>
+                <li><a href="">ботинки</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <span class="trigger">Обувь для девочек</span>
+            <div class="hide">
+              <ul>
+                <li><a href="">туфли</a></li>
+                <li><a href="">ботинки</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <span class="trigger">Скидки</span>
+            <div class="hide">
+              <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <form class="sub-brand">
+          <div class="marginbottom">
+            <span>Бренд</span>
+            <input type="text" />
+            <input type="submit" class="brand-btn" value="" />
+          </div>
+          <span>Подписаться</span>
+          <input type="email" />
+          <input type="submit" class="mail-btn" value="" />
+        </form>
+        <ul class="social">
+          <li><a  class="od" href=""></a></li>
+          <li><a  class="vk" href=""></a></li>
+          <li><a  class="fb" href=""></a></li>
+        </ul>
+      </aside>
+      <div class="content">
+        <nav class="top-nav clearfix">
+          <ul>
+            <li></li>
+            <li class="orange"><a href="">Клиентам</a></li>
+            <li class="red"><a href="">Контакты</a></li>
+            <li class="blue"><a href="">О нас</a></li>
+            <li id="basket">
+              <a href=""><span id="counter"></span></a>
+              <div class="your-prod">
+                <h5>ВАША КОРЗИНА</h5>
+                <span class="empty">Ваша корзина пуста</span>
+              </div>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
+        <div class="order-list">
+          <h1 class="title">Оформление заказа</h1>
+          <div class="order-wrap">
+            <div class="left-colum">
+              <table class="order-data">
+                <thead>
+                  <tr>
+                    <th class="image">Фото</th>
+                    <th class="name">Наименование товара</th>
+                    <th class="model">Модель</th>
+                    <th class="quantity"><span title="Количество">Кол-во</span></th>
+                    <th class="price">Цена</th>
+                    <th class="total">Итого</th>
+                    <th class="remove"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="order-image">
+                      <a href=""><img src="images/image1.jpg" alt="" /></a>
+                    </td>
+                    <td class="order-name">
+                      <a href="">Ботинки Прыг-Скок, цвет: бежевый</a>
+                    </td>
+                    <td class="model">t-1000</td>
+                    <td class="quantity">
+                      <span class="minus act"></span>
+                      <input type="text" value="1" />
+                      <span class="plus act"></span>
+                    </td>
+                    <td class="ord-price">10 000 руб.</td>
+                    <td class="total">10 000 руб.</td>
+                    <td class="remuve-order">
+                      <span class="closed"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="cart-total">
+                <span class="cart-name">Сумма:</span>
+                <span class="cart-description">50 848 руб.</span>
+              </div>
+              <div class="cart-total">
+                <span class="cart-name">Самовывоз из магазина:</span>
+                <span class="cart-description">0 руб.</span>
+              </div>
+              <div class="cart-total">
+                <span class="cart-name">Итого:</span>
+                <span class="cart-description">10 000 руб.</span>
+              </div>
+              <div class="cart-total">
+                <span class="cart-name">Купон:</span>
+                <input type="text" />
+              </div>
+              <div class="cart-total">
+                <span class="cart-name">Подарочный сертификат:</span>
+                <input type="text" />
+              </div>
+              <div class="cart-total">
+                <a href="" class="icept-btn">Принять</a>
+              </div>
+            </div>
+            <div class="right-colum">
+              <h4>Информация о покупателе</h4>
+              <div class="client-info">
+                <h5>Основная информация</h5>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><span>*</span>E-mail:</td>
+                      <td><input type="email" /></td>
+                    </tr>
+                    <tr>
+                      <td><span>*</span>Имя:</td>
+                      <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td><span>*</span>Телефон:</td>
+                      <td><input type="tel" /></td>
+                    </tr>
+                    <tr>
+                      <td>Комментарий:</td>
+                      <td><textarea></textarea></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="cart-total finish">
+              <a href="" class="icept-btn">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="copy">@ 2016 Мама знает!</span>
+    </footer>
+  </div>
+<script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

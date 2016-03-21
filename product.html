@@ -7,6 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+  <div id="modal1" class="modal_div">
+    <span class="modal_close"></span>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div id="overlay"></div>
   <div class="page-wrapper">
     <div class="top-line"></div>
     <div class="wrapper clearfix">
@@ -16,36 +26,37 @@
             <img src="images/logo.png" alt="" />
           </a>
         </div>
-        <div class="catalog">
+        <div class="accordeon">
           <h3>Каталог</h3>
-          <ul class="visible-list">
-            <li>
-              <span class="trigger"></span>
-              обувь для мальчиков
-              <ul class="hide-list">
+          <div>
+            <span class="trigger">Обувь для мальчиков</span>
+            <div class="hide">
+              <ul>
                 <li><a href="">туфли</a></li>
                 <li><a href="">ботинки</a></li>
               </ul>
-            </li>
-            <li>
-              <span class="trigger"></span>
-              обувь для девочек
-              <ul class="hide-list">
+            </div>
+          </div>
+          <div>
+            <span class="trigger">Обувь для девочек</span>
+            <div class="hide">
+              <ul>
                 <li><a href="">туфли</a></li>
                 <li><a href="">ботинки</a></li>
               </ul>
-            </li>
-            <li>
-              <span class="trigger"></span>
-              скидки
-              <ul class="hide-list">
+            </div>
+          </div>
+          <div>
+            <span class="trigger">Скидки</span>
+            <div class="hide">
+              <ul>
                 <li><a href="">1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
                 <li><a href="">4</a></li>
               </ul>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
         <form class="sub-brand">
           <div class="marginbottom">
@@ -72,6 +83,10 @@
             <li class="blue"><a href="">О нас</a></li>
             <li id="basket">
               <a href=""><span id="counter"></span></a>
+              <div class="your-prod">
+                <h5>ВАША КОРЗИНА</h5>
+                <span class="empty">Ваша корзина пуста</span>
+              </div>
             </li>
             <li></li>
           </ul>
@@ -141,7 +156,7 @@
                     <option>30</option>
                     <option>31</option>
                   </select>
-                  <a href="" class="link-pr">Таблица размеров</a>
+                  <a class="link-pr open_modal" href="#modal1">Таблица размеров</a>
                 </form>
                 <span class="avail-message">Есть в наличии!</span>
                 <a href="" class="add-prod-bascet">В корзину</a>
